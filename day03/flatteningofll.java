@@ -9,7 +9,7 @@ class Node {
 
 class Solution {
     Node merge(Node a, Node b) {
-        // Fixed: Explicit null termination
+        
         if (a == null) return b;
         if (b == null) return a;
         
@@ -62,13 +62,13 @@ public class flatteningofll {
     public static void main(String[] args) {
         Solution ob = new Solution();
         
-        // Correct screenshot structure build
+        
         Node head = new Node(5);
         head.next = new Node(7);
         head.next.next = new Node(8);
         head.next.next.next = new Node(30);
         
-        // Sublists (bottom pointers)
+        
         head.bottom = new Node(10);
         head.bottom.bottom = new Node(20);
         
