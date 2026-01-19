@@ -13,7 +13,7 @@ public class busticketchange {
                     return false;
                 five--;
                 ten++;
-            } else {  // 20
+            } else {  
                 if (ten > 0 && five > 0) {
                     ten--;
                     five--;
@@ -28,14 +28,14 @@ public class busticketchange {
     }
 
     public static void main(String[] args) {
-        // Test case 1
+    
         int[] arr1 = {5, 5, 5, 10, 20};
-        System.out.println("Test 1: " + canServe(arr1));  // true
+        System.out.println("Test 1: " + canServe(arr1));  
 
-        // Test case 2
+        
         int[] arr2 = {5, 5, 10, 10, 20};
-        System.out.println("Test 2: " + canServe(arr2));  // false
+        System.out.println("Test 2: " + canServe(arr2));  
 
-        // Add more tests here
+        
     }
 }

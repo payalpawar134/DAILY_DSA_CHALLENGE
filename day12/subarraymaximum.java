@@ -7,8 +7,8 @@ public class subarraymaximum {
         int n = arr.length;
         
         for(int i = 0; i < n; i++){
-            if(!dq.isEmpty() && dq.peek() == i-k){  // peek() for front
-                dq.poll();  // poll() for front
+            if(!dq.isEmpty() && dq.peek() == i-k){  
+                dq.poll();  
             }
             
             while(!dq.isEmpty() && arr[dq.peekLast()] < arr[i]){
@@ -27,6 +27,6 @@ public class subarraymaximum {
         int[] arr = {1, 3, -1, -3, 5, 3, 6, 7};
         int k = 3;
         ArrayList<Integer> result = maxOfSubarrays(arr, k);
-        System.out.println(result);  // [3, 3, 5, 5, 6, 7]
+        System.out.println(result);  
     }
 }
