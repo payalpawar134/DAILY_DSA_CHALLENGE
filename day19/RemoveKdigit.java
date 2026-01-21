@@ -34,6 +34,6 @@ public class RemoveKdigit {
     public static void main(String[] args) {
         String result = removeKdig("388813", 4);
         System.out.println("Input: 388813, k=4");
-        System.out.println("Output: " + result);  // 13
+        System.out.println("Output: " + result);  
     }
 }
